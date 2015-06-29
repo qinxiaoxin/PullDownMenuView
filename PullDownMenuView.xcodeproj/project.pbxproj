@@ -13,6 +13,7 @@
 		34FE0AA91B412BC9005928CF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34FE0AA81B412BC9005928CF /* Images.xcassets */; };
 		34FE0AAC1B412BC9005928CF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34FE0AAA1B412BC9005928CF /* LaunchScreen.xib */; };
 		34FE0AB81B412BC9005928CF /* PullDownMenuViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FE0AB71B412BC9005928CF /* PullDownMenuViewTests.swift */; };
+		34FE0AC21B412C51005928CF /* PullDownMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FE0AC11B412C51005928CF /* PullDownMenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		34FE0AB11B412BC9005928CF /* PullDownMenuViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PullDownMenuViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		34FE0AB61B412BC9005928CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34FE0AB71B412BC9005928CF /* PullDownMenuViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullDownMenuViewTests.swift; sourceTree = "<group>"; };
+		34FE0AC11B412C51005928CF /* PullDownMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullDownMenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +79,9 @@
 		34FE0A9E1B412BC9005928CF /* PullDownMenuView */ = {
 			isa = PBXGroup;
 			children = (
-				34FE0AA11B412BC9005928CF /* AppDelegate.swift */,
+				34FE0AC11B412C51005928CF /* PullDownMenuView.swift */,
 				34FE0AA31B412BC9005928CF /* ViewController.swift */,
 				34FE0AA51B412BC9005928CF /* Main.storyboard */,
-				34FE0AA81B412BC9005928CF /* Images.xcassets */,
-				34FE0AAA1B412BC9005928CF /* LaunchScreen.xib */,
 				34FE0A9F1B412BC9005928CF /* Supporting Files */,
 			);
 			path = PullDownMenuView;
@@ -90,6 +90,9 @@
 		34FE0A9F1B412BC9005928CF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				34FE0AA11B412BC9005928CF /* AppDelegate.swift */,
+				34FE0AA81B412BC9005928CF /* Images.xcassets */,
+				34FE0AAA1B412BC9005928CF /* LaunchScreen.xib */,
 				34FE0AA01B412BC9005928CF /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				34FE0AA41B412BC9005928CF /* ViewController.swift in Sources */,
+				34FE0AC21B412C51005928CF /* PullDownMenuView.swift in Sources */,
 				34FE0AA21B412BC9005928CF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

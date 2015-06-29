@@ -8,18 +8,25 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, PullDownMenuDelegate {
+    
+    var gkMenu: PullDownMenuView? { didSet { gkMenu?.delegate = self } }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        if gkMenu == nil {
+            gkMenu = PullDownMenuView(frame: CGRectMake(0, self.view.center.y, UIScreen.mainScreen().bounds.size.width, 50))
+            let gkArray = [["阿森纳门将", "切赫", "什琴斯尼"], ["切尔西门将", "库尔图瓦", "斯托克维奇"]]
+            gkMenu!.initWithArray(gkArray, selectedColor: UIColor(red: 0/255, green: 171/255, blue: 155/255, alpha: 1))
+            self.view.addSubview(gkMenu!)
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    //MARK: - PullDownMenu delegate
+    
+    func pullDownMenu(pullDownMenu: PullDownMenuView!, didSelectRowAtColumn column: NSInteger, didSelectRowAtRow row: NSInteger) {
+        println("column = \(column),,,row = \(row)")
     }
-
-
 }
 
